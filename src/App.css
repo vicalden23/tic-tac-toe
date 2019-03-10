@@ -11,6 +11,17 @@
   vertical-align: top;
 }
 
+.reset-button {
+  margin-top: 1.5rem;
+  background-color: salmon;
+  border-radius: 4px;
+  height: 2rem;
+  width: 6rem;
+  box-shadow: 1px 1px darkgrey;
+  font-size: 17px;
+  outline: none;
+}
+
 
 .App {
   text-align: center;
