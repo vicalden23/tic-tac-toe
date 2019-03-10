@@ -68,7 +68,8 @@ class Game extends Component {
 
   resetBoard() {
     this.setState({
-      squares: Array(9).fill(null)
+      squares: Array(9).fill(null),
+      xIsNext: true
     })
   }
 
