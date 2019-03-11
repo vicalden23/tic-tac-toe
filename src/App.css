@@ -22,6 +22,41 @@
   outline: none;
 }
 
+.dropdown {
+  margin-top: 2rem;
+  width: 10rem;
+  margin-left: 5rem;
+}
+
+.drop {
+  font-size: 13px;
+  width: 10rem;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  text-align: center;
+  width: 10rem;
+  display: none;
+}
+
+.dropdown-item {
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.dropdown-item:hover {
+  background-color: gray;
+}
+
 
 .App {
   text-align: center;
