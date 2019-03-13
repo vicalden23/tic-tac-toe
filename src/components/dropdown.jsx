@@ -1,15 +1,22 @@
 import React from 'react'
+// import './dropdown.css'
 
-export default function Dropdown() {
+export default function Dropdown(props) {
   return (
     <div className='dropdown'>
       <button className='drop'>
         More Options
       </button>
       <div className='dropdown-menu'>
-        <a href='' className='dropdown-item'>item 1</a><br/>
-        <a href='' className='dropdown-item'>item 2</a><br/>
-        <a href='' className='dropdown-item'>item 3</a><br/>
+        {
+          props.dropdownItems.map((item) => {
+            return (
+              <div>
+                <a href='' className='dropdown-item'>{item}</a>
+              </div>
+            )
+          })
+        }
       </div>
     </div>
   )

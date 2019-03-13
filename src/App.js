@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dropdown from './components/dropdown'
 import logo from './logo.svg';
 import './App.css';
 
@@ -95,14 +96,19 @@ class Game extends Component {
 
   render() {
     return (
-      <div className='app'>
-        <Board
-          squares={this.state.squares}
-          onClick={i => this.handleClick(i)}
-        />
-        <button className='reset-button' onClick={this.resetBoard.bind(this)}>
-          Reset
-        </button>
+      <div>
+        <div className='app'>
+          <Board
+            squares={this.state.squares}
+            onClick={i => this.handleClick(i)}
+          />
+          <button className='reset-button' onClick={this.resetBoard.bind(this)}>
+            Reset
+          </button>
+        </div>
+
+        <Dropdown dropdownItems={['item 1', 
+        'item 2', 'item 3']}/>
       </div>
     );
   }
